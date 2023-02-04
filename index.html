@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentification</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <form action="/api/token" class="login-form">
+        <div class="flex  flex-center  my-1">
+          <label class="w-half" for="email" class="label">Email :</label>
+          <input class="w-half" type="email" id="email" />
+        </div>
+        <div class="flex  flex-center  my-1">
+          <label class="w-half" for="password" class="label">Mot de passe :</label>
+          <input class="w-half" type="password" name="password" id="password" />
+        </div>
+        <input type="submit" value="Se connecter" />
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
