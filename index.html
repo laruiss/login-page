@@ -17,13 +17,15 @@
   <body>
     <div id="app">
       <form action="/api/token" class="login-form">
-        <div class="flex  flex-center  my-1">
+        <div class="flex  flex-center  flex-wrap  my-1">
           <label class="w-half" for="email" class="label">Email :</label>
           <input class="w-half" type="email" id="email" />
+          <p id="email-message" class="w-full"></p>
         </div>
-        <div class="flex  flex-center  my-1">
+        <div class="flex  flex-center  flex-wrap  my-1">
           <label class="w-half" for="password" class="label">Mot de passe :</label>
           <input class="w-half" type="password" name="password" id="password" />
+          <p id="password-message" class="w-full"></p>
         </div>
         <input type="submit" value="Se connecter" />
       </form>

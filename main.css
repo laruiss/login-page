@@ -11,6 +11,10 @@ input {
   height: 2.5rem;
 }
 
+input.error {
+  border: 1px solid #f55;
+}
+
 button,
 input[type='button'],
 input[type='reset'],
@@ -40,15 +44,23 @@ input[type='submit'] {
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flex-center {
   justify-content: center;
   align-items: center;
 }
 
 .w-half {
-  flex-basis: 50%;
+  flex-basis: 34%;
   flex-shrink: 0;
-  flex-grow: 0;
+  flex-grow: 1;
+}
+
+.w-full {
+  flex-basis: 100%;
 }
 
 .my-1 {
